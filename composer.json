@@ -1,7 +1,14 @@
 {
     "require": {
         "slim/slim": "^4",
-        "slim/psr7": "^1"
+        "slim/psr7": "^1",
+        "open-telemetry/sdk": "^1.0@RC",
+        "open-telemetry/opentelemetry-auto-slim": "^1.0@beta"
     },
-    "minimum-stability": "beta"
+    "minimum-stability": "beta",
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": false
+        }
+    }
 }
